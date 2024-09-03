@@ -1,0 +1,3 @@
+SELECT id, name
+FROM instructor
+WHERE salary = (SELECT MAX(salary) FROM instructor);
